@@ -1,0 +1,27 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8762
+spring:
+  application:
+    name: athena-eureka-client
+  zipkin:
+    base-url: http://localhost:8768
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      percentage: 1
+  rabbitmq:
+    host: localhost
+    port: 5672
+#security:
+#  basic:
+#    enabled: true
+#  user:
+#    name: admin
+#    password: admin
+#    role:
+#    - USER
