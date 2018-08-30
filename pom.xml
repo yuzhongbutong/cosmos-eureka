@@ -23,6 +23,7 @@
 		<module>athena-config-server</module>
 		<module>briseis-eureka-client</module>
 		<module>athena-zipkin-server</module>
+		<module>athena-turbine-server</module>
 	</modules>
 
 	<parent>

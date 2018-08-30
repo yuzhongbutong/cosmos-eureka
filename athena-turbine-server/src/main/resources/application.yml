@@ -1,0 +1,16 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8760/eureka/
+server:
+  port: 8767
+spring:
+  application:
+    name: athena-turbine-server
+security.basic.enabled: false
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: athena-ribbon-client
+  clusterNameExpression: new String("default")
+  instanceUrlSuffix: /hystrix.stream
