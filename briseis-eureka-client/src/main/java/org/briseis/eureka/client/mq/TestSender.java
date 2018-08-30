@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Sender {
+public class TestSender {
 
 	@Autowired
 	private AmqpTemplate amqpTemplate;
